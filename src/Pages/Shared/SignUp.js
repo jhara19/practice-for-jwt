@@ -1,6 +1,24 @@
 import React from 'react';
-
+import login from '../../assets/images/login/login.svg'
 const SignUp = () => {
+
+const handleSignup = (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.name.value;
+  const email = form.email.value;
+  const password = form.password.value;
+  const user = {name, email, password};
+  console.log(user);
+}
+
+
+//GOOGLE SIGNIN
+const handleGoogleSignin = () => {
+  
+}
+
+
     return (
         <div className="hero w-full my-20">
         <div className="hero-content grid gap-28 md:grid-cols-2 flex-col lg:flex-row">
